@@ -22,8 +22,8 @@
   </div>
 
   <div class="field">
-    <%= f.label :addresses, "住所" %><br />
-    <%= f.fields_for :addresses do |addresses_form| %>
+    <%= form.label :addresses, "住所" %><br />
+    <%= form.fields_for :addresses do |addresses_form| %>
       <%= addresses_form.label :zipcode, "郵便番号" %>
       <%= addresses_form.text_field :zipcode %><br />
       <%= addresses_form.label :city, "都道府県" %>
